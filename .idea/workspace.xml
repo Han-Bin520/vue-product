@@ -5,10 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="141a0bf1-7c48-49e1-a403-a0f58d5b26ee" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/music/src/components/SongList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music/postcss.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/music/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/music/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/postcss-config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/assets/css/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/assets/css/base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/assets/css/mixin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/assets/css/mixin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/assets/css/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/assets/css/variable.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/components/Banner.vue" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/components/Banner.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/components/Personalized.vue" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/components/Personalized.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/components/SongList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/components/SongList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/components/Tabbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/components/Tabbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music/src/views/Recommend.vue" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/views/Recommend.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/music/vue.config.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/music/src/api/network.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="108">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="53" />
               <folding>
                 <element signature="e#500#742#0" />
               </folding>
@@ -33,55 +46,44 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/music/src/views/Recommend.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="419">
+              <caret line="85" column="24" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="24" />
               <folding>
-                <element signature="e#277#359#0" expanded="true" />
-                <element signature="e#682#727#0" />
-                <element signature="e#757#791#0" />
-                <element signature="e#916#950#0" />
-                <element signature="e#992#1048#0" />
-                <element signature="e#1078#1112#0" />
-                <element signature="e#1251#1285#0" />
+                <element signature="e#322#404#0" expanded="true" />
+                <element signature="e#600#648#0" />
+                <element signature="e#660#761#0" />
+                <element signature="e#776#1398#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/music/src/api/index.js">
+        <entry file="file://$PROJECT_DIR$/music/src/components/Header.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/music/src/components/SongList.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="72" column="46" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
-                <element signature="e#537#892#0" />
-                <element signature="e#1376#1416#0" />
-              </folding>
+            <state relative-caret-position="612">
+              <caret line="38" column="8" selection-start-line="38" selection-start-column="10" selection-end-line="39" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/music/src/components/Banner.vue">
+        <entry file="file://$PROJECT_DIR$/music/src/components/Tabbar.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="25" column="20" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="25" selection-end-column="20" />
-              <folding>
-                <element signature="e#394#450#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="612">
+              <caret line="32" column="10" selection-start-line="32" selection-start-column="8" selection-end-line="33" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/music/src/assets/css/variable.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -89,12 +91,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/music/src/components/Personalized.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="17" column="7" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="563">
+              <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
               <folding>
-                <element signature="n#div#1;n#div#0;n#template#0;n#!!top" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="e#450#626#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/music/src/router/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1476">
+              <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/music/src/views/Detail.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/music/src/components/ScrollView.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="864">
+              <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -130,35 +161,40 @@
       <list>
         <option value="$PROJECT_DIR$/music/public/index.html" />
         <option value="$PROJECT_DIR$/music/vue.js" />
-        <option value="$PROJECT_DIR$/music/vue.config.js" />
         <option value="$PROJECT_DIR$/music/.browserslistrc" />
         <option value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/languageService/eslint/bin/eslint-plugin.js" />
-        <option value="$PROJECT_DIR$/music/src/components/Header.vue" />
         <option value="$PROJECT_DIR$/music/src/views/Rand.vue" />
         <option value="$PROJECT_DIR$/music/src/views/Search.html" />
         <option value="$PROJECT_DIR$/music/src/views/Search.vue" />
         <option value="$PROJECT_DIR$/music/src/views/Singer.vue" />
         <option value="$PROJECT_DIR$/music/src/views/Rank.vue" />
         <option value="$PROJECT_DIR$/music/src/App.vue" />
-        <option value="$PROJECT_DIR$/music/src/components/Tabbar.vue" />
-        <option value="$PROJECT_DIR$/music/src/router/index.js" />
         <option value="$PROJECT_DIR$/music/src/api/network.js" />
-        <option value="$PROJECT_DIR$/music/src/main.js" />
         <option value="$PROJECT_DIR$/music/package-lock.json" />
         <option value="$PROJECT_DIR$/music/package.json" />
-        <option value="$PROJECT_DIR$/music/src/components/Banner.vue" />
-        <option value="$PROJECT_DIR$/music/src/assets/css/base.scss" />
-        <option value="$PROJECT_DIR$/music/src/components/Personalized.vue" />
         <option value="$PROJECT_DIR$/music/src/api/index.js" />
-        <option value="$PROJECT_DIR$/music/src/views/Recommend.vue" />
+        <option value="$PROJECT_DIR$/music/postcss-config.js" />
+        <option value="$PROJECT_DIR$/music/vue.config.js" />
+        <option value="$PROJECT_DIR$/music/src/main.js" />
         <option value="$PROJECT_DIR$/music/src/components/SongList.vue" />
+        <option value="$PROJECT_DIR$/music/src/assets/css/mixin.scss" />
+        <option value="$PROJECT_DIR$/music/src/assets/css/base.scss" />
+        <option value="$PROJECT_DIR$/music/src/components/Banner.vue" />
+        <option value="$PROJECT_DIR$/music/src/components/ScrollView.vue" />
+        <option value="$PROJECT_DIR$/music/src/assets/css/variable.scss" />
+        <option value="$PROJECT_DIR$/music/src/router/index.js" />
+        <option value="$PROJECT_DIR$/music/src/views/Detail.vue" />
+        <option value="$PROJECT_DIR$/music/src/components/Personalized.vue" />
+        <option value="$PROJECT_DIR$/music/src/components/Header.vue" />
+        <option value="$PROJECT_DIR$/music/src/components/Tabbar.vue" />
+        <option value="$PROJECT_DIR$/music/src/views/Recommend.vue" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="width" value="1294" />
-    <option name="height" value="1407" />
+    <option name="width" value="846" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="添加" />
@@ -192,7 +228,28 @@
               <item name="vue-product" type="462c0819:PsiDirectoryNode" />
               <item name="music" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-product" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-product" type="462c0819:PsiDirectoryNode" />
+              <item name="music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-product" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-product" type="462c0819:PsiDirectoryNode" />
+              <item name="music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-product" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-product" type="462c0819:PsiDirectoryNode" />
+              <item name="music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -217,6 +274,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\my\Git Product\vue-product\music\src\assets\images" />
       <recent name="E:\my\Git Product\vue-product\music" />
       <recent name="E:\my\Git Product\vue-product\music\src\assets" />
     </key>
@@ -253,7 +311,8 @@
       <workItem from="1600476954368" duration="616000" />
       <workItem from="1600493892812" duration="13112000" />
       <workItem from="1600649412241" duration="14491000" />
-      <workItem from="1600738328289" duration="8077000" />
+      <workItem from="1600738328289" duration="8190000" />
+      <workItem from="1600830786534" duration="13811000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1600252270137</created>
@@ -297,11 +356,18 @@
       <option name="project" value="LOCAL" />
       <updated>1600679368978</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="完成最新歌单模块(注意数据的绑定)">
+      <created>1600769362832</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600769362832</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50679000" />
+    <option name="totallyTimeSpent" value="64603000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -316,7 +382,7 @@
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19020867" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19261637" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -328,7 +394,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32912844" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4995987" visible="true" weight="0.33685064" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4995987" visible="true" weight="0.33685064" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50040126" side_tool="true" weight="0.37743506" />
       <window_info anchor="bottom" id="调试" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -366,7 +432,8 @@
     <MESSAGE value="头部模式和导航路由" />
     <MESSAGE value="Axios网络请求模块封装和banner封装" />
     <MESSAGE value="完成推荐歌单和最新专辑模块(组件切换)" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成推荐歌单和最新专辑模块(组件切换)" />
+    <MESSAGE value="完成最新歌单模块(注意数据的绑定)" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成最新歌单模块(注意数据的绑定)" />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />
@@ -380,26 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/music/babel.config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/music/vue.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/music/postcss-config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/music/.browserslistrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/languageService/eslint/bin/eslint-plugin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
@@ -407,33 +454,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/music/src/assets/css/variable.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/music/src/assets/css/reset.scss">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/music/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="15" column="67" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/music/src/components/Header.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="31" selection-end-column="34" />
-          <folding>
-            <element signature="e#449#473#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/music/src/assets/css/mixin.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3591" />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/music/src/views/Search.html" />
     <entry file="file://$PROJECT_DIR$/music/src/views/Rank.vue">
@@ -464,13 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/music/src/components/Tabbar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="11" column="38" selection-start-line="2" selection-start-column="9" selection-end-line="11" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/music/src/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -480,33 +495,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/music/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/music/node_modules/swiper/swiper-bundle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8709" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/music/node_modules/swiper/package.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/music/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/music/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -522,20 +512,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/music/src/assets/css/base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="5" column="2" selection-start-line="5" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/music/.eslintrc.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/music/babel.config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music/vue.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music/postcss.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music/node_modules/swiper/swiper-bundle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music/.browserslistrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music/src/components/SongList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music/src/api/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/music/src/api/network.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="108">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="53" />
           <folding>
             <element signature="e#500#742#0" />
           </folding>
@@ -544,66 +585,109 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/music/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="72">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
           <folding>
             <element signature="e#135#175#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/music/src/api/index.js">
+    <entry file="file://$PROJECT_DIR$/music/src/assets/css/base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="288">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/music/src/components/Personalized.vue">
+    <entry file="file://$PROJECT_DIR$/music/src/assets/css/mixin.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="7" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="1080">
+          <caret line="90" column="3" selection-start-line="90" selection-start-column="3" selection-end-line="90" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music/src/assets/css/variable.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/music/src/components/Banner.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="25" column="20" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="25" selection-end-column="20" />
+        <state relative-caret-position="596">
+          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
           <folding>
             <element signature="e#394#450#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/music/src/views/Recommend.vue">
+    <entry file="file://$PROJECT_DIR$/music/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="1476">
+          <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
           <folding>
-            <element signature="e#277#359#0" expanded="true" />
-            <element signature="e#682#727#0" />
-            <element signature="e#757#791#0" />
-            <element signature="e#916#950#0" />
-            <element signature="e#992#1048#0" />
-            <element signature="e#1078#1112#0" />
-            <element signature="e#1251#1285#0" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/music/src/components/SongList.vue">
+    <entry file="file://$PROJECT_DIR$/music/src/views/Detail.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="72" column="46" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+        <state relative-caret-position="576">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music/src/components/ScrollView.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music/src/components/Personalized.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="e#537#892#0" />
-            <element signature="e#1376#1416#0" />
+            <element signature="e#450#626#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music/src/components/Header.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="10" selection-end-line="39" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music/src/components/Tabbar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="8" selection-end-line="33" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music/src/views/Recommend.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="85" column="24" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="24" />
+          <folding>
+            <element signature="e#322#404#0" expanded="true" />
+            <element signature="e#600#648#0" />
+            <element signature="e#660#761#0" />
+            <element signature="e#776#1398#0" />
           </folding>
         </state>
       </provider>

@@ -36,11 +36,21 @@ export default {
         @include bg_color();
         display: flex;
         justify-content: space-between;
-        .header-left,.header-right{
-            width: 84px;
-            height: 84px;
-            background: #000;
-            margin-top: 8px;
+        /*position: relative;*/
+        /*z-index: 999;*/
+        .header-left{
+            width: 50px;
+            height: 50px;
+            margin-left: 20px;
+            margin-top:20px;
+            @include bg_img('../assets/images/logo');
+        }
+        .header-right{
+            margin-right: 20px;
+            width: 40px;
+            height: 40px;
+            margin-top: 30px;
+            @include bg_img('../assets/images/me');
         }
         .header-title{
             text-align: center;
