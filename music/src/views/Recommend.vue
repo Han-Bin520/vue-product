@@ -85,5 +85,4 @@ export default {
         bottom: 0;
         overflow: hidden;
     }
-
 </style>

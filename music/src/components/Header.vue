@@ -38,18 +38,15 @@ export default {
         justify-content: space-between;
         /*position: relative;*/
         /*z-index: 999;*/
+        .header-left,.header-right{
+            width: 84px;
+            height: 84px;
+            margin-top: 8px;
+        }
         .header-left{
-            width: 50px;
-            height: 50px;
-            margin-left: 20px;
-            margin-top:20px;
             @include bg_img('../assets/images/logo');
         }
         .header-right{
-            margin-right: 20px;
-            width: 40px;
-            height: 40px;
-            margin-top: 30px;
             @include bg_img('../assets/images/me');
         }
         .header-title{

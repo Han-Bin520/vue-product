@@ -53,7 +53,7 @@ export default {
             .item{
                 display: flex;
                 align-items: center;
-                padding: 0 20px;
+                padding: 8px 20px;
                 margin-bottom: 20px;
                 border-bottom: 1px solid #ccc;
                 img{
