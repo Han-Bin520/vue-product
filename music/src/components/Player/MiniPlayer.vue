@@ -1,0 +1,121 @@
+<template>
+    <transition
+            :css="false"
+            @enter="enter"
+            @leave="leave">
+        <div class="mini-player" v-show="this.isShowMiniPlayer" @click.stop="hiddenMiniPlayer">
+            <div class="player-wrapper">
+                <div class="player-left" @click="showNormalPlayer">
+                    <img src="https://p1.music.126.net/ADndy2vey5j-2WmKvblQBw==/109951165093202265.jpg" alt="图片">
+                    <div class="player-title">
+                        <h3>yan yuan</h3>
+                        <p>han-yan-yuan</p>
+                    </div>
+                </div>
+                <div class="player-right">
+                    <div class="play"></div>
+                    <div class="list" @click.stop="showList"></div>
+                </div>
+            </div>
+        </div>
+    </transition>
+</template>
+
+<script>
+import { mapActions, mapGetters } from 'vuex'
+import Velocity from 'velocity-animate'
+import 'velocity-animate/velocity.ui'
+
+export default {
+  name: 'MiniPlayer',
+  methods: {
+    showList () {
+      this.$emit('showList')
+    },
+    ...mapActions([
+      'setFullScreen',
+      'setMiniPlayer'
+    ]),
+    showNormalPlayer () {
+      this.setFullScreen(true)
+      this.setMiniPlayer(false)
+    },
+    hiddenMiniPlayer () {
+      this.setMiniPlayer(false)
+    },
+    enter (el, done) {
+      Velocity(el, 'transition.bounceUpIn', { duration: 500 }, function () {
+        done()
+      })
+    },
+    leave (el, done) {
+      Velocity(el, 'transition.bounceDownOut', { duration: 500 }, function () {
+        done()
+      })
+    }
+  },
+  computed: {
+    ...mapGetters([
+      'isShowMiniPlayer'
+    ])
+  }
+}
+</script>
+
+<style scoped lang="scss">
+    @import "../../assets/css/mixin";
+    @import "../../assets/css/variable";
+    .mini-player{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 150px;
+        .player-wrapper{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            @include bg_color();
+            .player-left{
+                display: flex;
+                padding-left: 30px;
+                img{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                }
+                .player-title{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    h3{
+                        @include font_size($font_medium);
+                        color: #fafafa;
+                    }
+                    p{
+                        @include font_size($font_medium_s);
+                        color: #fafafa;
+                    }
+                }
+            }
+            .player-right{
+                display: flex;
+                align-items: center;
+                .play{
+                    width: 84px;
+                    height: 84px;
+                    @include bg_img('../../assets/images/play');
+                }
+                .list{
+                    width: 120px;
+                    height: 120px;
+                    @include bg_img('../../assets/images/list');
+                }
+            }
+        }
+    }
+</style>
