@@ -13,6 +13,7 @@ export default {
     this.iscroll = new IScroll(this.$refs.wrapper, {
       mouseWheel: true,
       scrollbars: false,
+      probeType: 3,
       scrollX: false,
       scrollY: true,
       disablePointer: true,
@@ -31,6 +32,14 @@ export default {
       attributeFilter: ['height', 'offsetHeight']
     }
     observer.observe(this.$refs.wrapper, config)
+  },
+  methods: {
+    // 提供一个监听滚动距离给外界使用
+    scrolling (fn) {
+      this.iscroll.on('scroll', function () {
+        fn(this.y)
+      })
+    }
   }
 }
 </script>

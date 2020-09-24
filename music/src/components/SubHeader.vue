@@ -1,6 +1,6 @@
 <template>
     <div class="header" @click="changTheme">
-        <div class="header-left" @click="back"></div>
+        <div class="header-left" @click.stop="back"></div>
         <p class="header-title">{{title}}</p>
         <div class="header-right"></div>
     </div>
@@ -16,6 +16,7 @@ export default {
     }
   },
   methods: {
+    // 切换主题
     changTheme () {
       this.index++
       if (this.index >= this.themes.length) {
@@ -46,8 +47,8 @@ export default {
         @include bg_color();
         display: flex;
         justify-content: space-between;
-        /*position: relative;*/
-        /*z-index: 999;*/
+        position: relative;
+        z-index: 999;
         .header-left,.header-right{
             width: 84px;
             height: 84px;
