@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style lang="scss">
-    @import "../assets/css/mixin";
+    @import "../../assets/css/mixin";
     .banner{
         .item{
             img{
