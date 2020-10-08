@@ -1,7 +1,7 @@
 <template>
     <swiper :options="swiperOptions" class="banner">
         <swiper-slide class="cd">
-            <div class="cd-wrapper">
+            <div class="cd-wrapper" ref="cdWrapper">
                 <img src="https://p1.music.126.net/ADndy2vey5j-2WmKvblQBw==/109951165093202265.jpg" alt="图片">
             </div>
             <p>d-han yuan-yan</p>
@@ -70,6 +70,8 @@
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import ScrollView from '../ScrollView'
 import 'swiper/swiper-bundle.css'
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'PlayerMiddle',
   components: {
@@ -88,6 +90,20 @@ export default {
         observer: true,
         observeParents: true,
         observeSlideChildren: true
+      }
+    }
+  },
+  computed: {
+    ...mapGetters([
+      'isPlaying'
+    ])
+  },
+  watch: {
+    isPlaying (newValue, oldValue) {
+      if (newValue) {
+        this.$refs.cdWrapper.classList.add('active')
+      } else {
+        this.$refs.cdWrapper.classList.remove('active')
       }
     }
   }
@@ -113,6 +129,11 @@ export default {
                 border: 30px solid #fafafa;
                 box-sizing: border-box;
                 overflow: hidden;
+                animation: sport 5s linear infinite;
+                animation-play-state: running;
+                &.active{
+                    animation-play-state: paused;
+                }
                 .img{
                     width: 100%;
                     height: 100%;
@@ -135,6 +156,14 @@ export default {
                     padding-bottom: 100px;
                 }
             }
+        }
+    }
+    @keyframes sport {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
         }
     }
 </style>

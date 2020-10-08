@@ -19,7 +19,7 @@
                         <ul>
                             <li class="item">
                                 <div class="item-left">
-                                    <div class="item-play"></div>
+                                    <div class="item-play" @click.stop="play" ref="play"></div>
                                     <p>yan yuan</p>
                                 </div>
                                 <div class="item-right">
@@ -42,6 +42,7 @@
 import ScrollView from '../ScrollView'
 import Velocity from 'velocity-animate'
 import 'velocity-animate/velocity.ui'
+import { mapActions, mapGetters } from 'vuex'
 
 export default {
   name: 'ListPlayer',
@@ -54,6 +55,9 @@ export default {
     }
   },
   methods: {
+    ...mapActions([
+      'setIsPlaying'
+    ]),
     show () {
       this.isShow = true
     },
@@ -69,6 +73,23 @@ export default {
       Velocity(el, 'transition.perspectiveDownOut', { duration: 500 }, function () {
         done()
       })
+    },
+    play () {
+      this.setIsPlaying(!this.isPlaying)
+    }
+  },
+  computed: {
+    ...mapGetters([
+      'isPlaying'
+    ])
+  },
+  watch: {
+    isPlaying (newValue, oldValue) {
+      if (newValue) {
+        this.$refs.play.classList.add('active')
+      } else {
+        this.$refs.play.classList.remove('active')
+      }
     }
   }
 }
@@ -128,7 +149,10 @@ export default {
                            width: 56px;
                            height: 56px;
                            margin-right: 20px;
-                           @include bg_img('../../assets/images/small_play')
+                           @include bg_img('../../assets/images/small_pause');
+                           &.active{
+                               @include bg_img('../../assets/images/small_play');
+                           }
                        }
                        p{
                            @include font_color();

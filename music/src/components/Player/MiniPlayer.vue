@@ -6,14 +6,14 @@
         <div class="mini-player" v-show="this.isShowMiniPlayer" @click.stop="hiddenMiniPlayer">
             <div class="player-wrapper">
                 <div class="player-left" @click="showNormalPlayer">
-                    <img src="https://p1.music.126.net/ADndy2vey5j-2WmKvblQBw==/109951165093202265.jpg" alt="图片">
+                    <img src="https://p1.music.126.net/ADndy2vey5j-2WmKvblQBw==/109951165093202265.jpg" ref="cd">
                     <div class="player-title">
                         <h3>yan yuan</h3>
                         <p>han-yan-yuan</p>
                     </div>
                 </div>
                 <div class="player-right">
-                    <div class="play"></div>
+                    <div class="play" @click.stop="play" ref="play"></div>
                     <div class="list" @click.stop="showList"></div>
                 </div>
             </div>
@@ -34,7 +34,8 @@ export default {
     },
     ...mapActions([
       'setFullScreen',
-      'setMiniPlayer'
+      'setMiniPlayer',
+      'setIsPlaying'
     ]),
     showNormalPlayer () {
       this.setFullScreen(true)
@@ -42,6 +43,7 @@ export default {
     },
     hiddenMiniPlayer () {
       this.setMiniPlayer(false)
+      this.setIsPlaying(true)
     },
     enter (el, done) {
       Velocity(el, 'transition.bounceUpIn', { duration: 500 }, function () {
@@ -52,12 +54,27 @@ export default {
       Velocity(el, 'transition.bounceDownOut', { duration: 500 }, function () {
         done()
       })
+    },
+    play () {
+      this.setIsPlaying(!this.isPlaying)
     }
   },
   computed: {
     ...mapGetters([
-      'isShowMiniPlayer'
+      'isShowMiniPlayer',
+      'isPlaying'
     ])
+  },
+  watch: {
+    isPlaying (newVaule, oldValue) {
+      if (newVaule) {
+        this.$refs.play.classList.add('active')
+        this.$refs.cd.classList.add('active')
+      } else {
+        this.$refs.play.classList.remove('active')
+        this.$refs.cd.classList.remove('active')
+      }
+    }
   }
 }
 </script>
@@ -86,6 +103,11 @@ export default {
                     height: 100px;
                     border-radius: 50%;
                     margin-right: 20px;
+                    animation: sport 5s linear infinite;
+                    animation-play-state: running;
+                    &.active{
+                        animation-play-state: paused;
+                    }
                 }
                 .player-title{
                     display: flex;
@@ -108,7 +130,10 @@ export default {
                 .play{
                     width: 84px;
                     height: 84px;
-                    @include bg_img('../../assets/images/play');
+                    @include bg_img('../../assets/images/pause');
+                    &.active{
+                        @include bg_img('../../assets/images/play');
+                    }
                 }
                 .list{
                     width: 120px;
@@ -116,6 +141,14 @@ export default {
                     @include bg_img('../../assets/images/list');
                 }
             }
+        }
+    }
+    @keyframes sport {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
         }
     }
 </style>
