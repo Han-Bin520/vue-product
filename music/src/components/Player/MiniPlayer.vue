@@ -30,11 +30,12 @@ export default {
   name: 'MiniPlayer',
   methods: {
     showList () {
-      this.$emit('showList')
+      this.setListPlayer(true)
     },
     ...mapActions([
       'setFullScreen',
       'setMiniPlayer',
+      'setListPlayer',
       'setIsPlaying'
     ]),
     showNormalPlayer () {

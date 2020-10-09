@@ -3,12 +3,14 @@
             :css="false"
             @enter="enter"
             @leave="leave">
-        <div class="list-player" v-show="isShow">
+        <div class="list-player" v-show="isListPlayer">
             <div class="player-wrapper">
                 <div class="player-top">
                     <div class="top-left">
-                        <div class="mode"></div>
-                        <p>播放顺序</p>
+                        <div class="mode loop" @click="mode" ref="mode"></div>
+                        <p v-if="this.modeType === 0">播放顺序</p>
+                        <p v-else-if="this.modeType === 1">单曲播放</p>
+                        <p v-else>随机播放</p>
                     </div>
                     <div class="top-right">
                         <div class="del"></div>
@@ -43,26 +45,21 @@ import ScrollView from '../ScrollView'
 import Velocity from 'velocity-animate'
 import 'velocity-animate/velocity.ui'
 import { mapActions, mapGetters } from 'vuex'
+import modeType from '../../store/modeType'
 
 export default {
   name: 'ListPlayer',
   components: {
     ScrollView
   },
-  data: function () {
-    return {
-      isShow: false
-    }
-  },
   methods: {
     ...mapActions([
-      'setIsPlaying'
+      'setIsPlaying',
+      'setModeType',
+      'setListPlayer'
     ]),
-    show () {
-      this.isShow = true
-    },
     hidden () {
-      this.isShow = false
+      this.setListPlayer(false)
     },
     enter (el, done) {
       Velocity(el, 'transition.perspectiveUpIn', { duration: 500 }, function () {
@@ -76,11 +73,22 @@ export default {
     },
     play () {
       this.setIsPlaying(!this.isPlaying)
+    },
+    mode () {
+      if (this.modeType === modeType.loop) {
+        this.setModeType(modeType.one)
+      } else if (this.modeType === modeType.one) {
+        this.setModeType(modeType.random)
+      } else if (this.modeType === modeType.random) {
+        this.setModeType(modeType.loop)
+      }
     }
   },
   computed: {
     ...mapGetters([
-      'isPlaying'
+      'isPlaying',
+      'modeType',
+      'isListPlayer'
     ])
   },
   watch: {
@@ -89,6 +97,18 @@ export default {
         this.$refs.play.classList.add('active')
       } else {
         this.$refs.play.classList.remove('active')
+      }
+    },
+    modeType (newVaule, oldValue) {
+      if (newVaule === modeType.loop) {
+        this.$refs.mode.classList.remove('random')
+        this.$refs.mode.classList.add('loop')
+      } else if (newVaule === modeType.one) {
+        this.$refs.mode.classList.remove('loop')
+        this.$refs.mode.classList.add('one')
+      } else if (newVaule === modeType.random) {
+        this.$refs.mode.classList.remove('one')
+        this.$refs.mode.classList.add('random')
       }
     }
   }
@@ -118,7 +138,15 @@ export default {
                        width: 56px;
                        height: 56px;
                        margin-right: 20px;
-                       @include bg_img('../../assets/images/small_loop')
+                       &.loop{
+                           @include bg_img('../../assets/images/small_loop')
+                       }
+                       &.one{
+                           @include bg_img('../../assets/images/small_one')
+                       }
+                       &.random{
+                           @include bg_img('../../assets/images/small_shuffle')
+                       }
                    }
                    p{
                        @include font_size($font_medium_s);

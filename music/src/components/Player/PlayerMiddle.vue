@@ -2,7 +2,7 @@
     <swiper :options="swiperOptions" class="banner">
         <swiper-slide class="cd">
             <div class="cd-wrapper" ref="cdWrapper">
-                <img src="https://p1.music.126.net/ADndy2vey5j-2WmKvblQBw==/109951165093202265.jpg" alt="图片">
+                <img :src="currentSong.picUrl" alt="">
             </div>
             <p>d-han yuan-yan</p>
         </swiper-slide>
@@ -95,7 +95,8 @@ export default {
   },
   computed: {
     ...mapGetters([
-      'isPlaying'
+      'isPlaying',
+      'currentSong'
     ])
   },
   watch: {
@@ -134,7 +135,7 @@ export default {
                 &.active{
                     animation-play-state: paused;
                 }
-                .img{
+                img{
                     width: 100%;
                     height: 100%;
                 }
@@ -142,7 +143,8 @@ export default {
             p{
                 text-align: center;
                 @include font_size($font_medium);
-                @include font_color();
+                //@include font_color();
+                color: #fff;
                 margin-top: 50px;
             }
         }
@@ -150,7 +152,8 @@ export default {
             li{
                 text-align: center;
                 @include font_size($font_medium);
-                @include font_color();
+                //@include font_color();
+                color: #fff;
                 margin: 10px 0;
                 &:last-of-type{
                     padding-bottom: 100px;

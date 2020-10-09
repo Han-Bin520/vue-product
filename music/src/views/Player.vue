@@ -1,8 +1,8 @@
 <template>
     <div class="player">
         <NormalPlayer></NormalPlayer>
-        <MiniPlayer @showList = "showList"></MiniPlayer>
-        <ListPlayer ref="ListPlayer1"></ListPlayer>
+        <MiniPlayer></MiniPlayer>
+        <ListPlayer ref="ListPlayer"></ListPlayer>
     </div>
 </template>
 
@@ -16,11 +16,6 @@ export default {
     NormalPlayer,
     MiniPlayer,
     ListPlayer
-  },
-  methods: {
-    showList () {
-      this.$refs.ListPlayer1.show()
-    }
   }
 }
 </script>
